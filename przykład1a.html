@@ -6,11 +6,16 @@ function WinOpen_sienkiewicz()
 {
 window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
 }
+function okno_zamknij_sienkiewicz()
+{
+window.close()
+}
 </script>
 </head>
 <body>
 <form>
-<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_sienkiewicz()">
+<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_sienkiewicz()"><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_sienkiewicz()"/><br>
 </form>
 </body>
 </html>
