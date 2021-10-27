@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Zadanie 21</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc_sien(d_sien,x_sien)
+{
+ d_sien=parseFloat(d_sien);
+ x_sien=parseFloat(x_sien);
+ drabina_sien=Math.sqrt(d_sien*d_sien+x_sien*x_sien);
+ document.getElementsByName('drab')[0].value=drabina_sien.toFixed(2);
+ alert("Drabina="+drabina_sien.toFixed(2)+" m");
+ drabina.innerHTML="Drabina="+drabina_sien.toFixed(2)+" m"+"<br>";
+}
+function alfa_sien(d_sien,x_sien)
+{
+ d_sien=parseFloat(d_sien);
+ x_sien=parseFloat(x_sien);
+ radian_sien=Math.atan2(d_sien,x_sien);
+ stopnie_sien=radian_sien*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_sien.toFixed(2);
+ alert("Alfa="+stopnie_sien.toFixed(2)+" stopni");
+ alfa.innerHTML="Alfa="+stopnie_sien.toFixed(2)+" stopni";
+}
+function okno_zamknij_sienkiewicz_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny 
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc_sien(this.d_dana_sien.value,this.x_dana_sien.value);
+alfa_sien(this.d_dana_sien.value,this.x_dana_sien.value);return false">
+Podaj d=
+<input size="6" name="d_dana_sien">
+Podaj x=
+<input size="6" name="x_dana_sien">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="drabina"></tr>
+<tr id="alfa"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_sienkiewicz_kod()"/>
+</table>
+</body>
+</html>
