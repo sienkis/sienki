@@ -1,0 +1,78 @@
+<html>
+<body>
+<div style="color:black;font-size:50px;"> 
+<script language="JavaScript">
+
+var licznik_s=0;
+for(var i=Math.round(2.01)-1;i<=Math.round(2.01)+1;i++){
+for (var  j=-2.01; j<=2.01;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=2.01){licznik_s++;}
+}
+}
+document.write("licznik="+licznik_s+"<br>");
+
+
+var licznik_si=0;
+for(var i=Math.round(4.5)-1;i<=Math.round(4.5)+1;i++){
+for (var  j=-4.5; j<=4.5;j++){
+d=Math.sqrt(i*i+j*j);
+
+if(d<=4.5){licznik_si++;}
+}
+}
+document.write("licznik="+licznik_si+"<br>");
+
+
+var licznik_sie=0;
+for(var i=Math.round(123)-1;i<=Math.round(123)+1;i++){
+for (var  j=-123; j<=123;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=123){licznik_sie++;}
+}
+
+}
+document.write("licznik="+licznik_sie+"<br>");
+
+
+
+var licznik_sien=0;
+for(var i=Math.round(1023)-1;i<=Math.round(1023)+1;i++){
+for (var  j=-1023; j<=1023;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=1023){licznik_sien++;}
+}
+}
+document.write("licznik="+licznik_sien+"<br>");
+
+
+
+
+
+</script>
+<style> td { border: 1px solid black; } </style>
+<table>
+   <tr>
+      <td>promien koła</td><td>liczba punktow kratowych N(R)</td>
+   </tr>
+   <tr>
+      <td>2.01</td> <td></td> 
+   </tr>
+   <tr>
+      <td>4.50</td> <td></td> 
+   </tr>
+   <tr>
+      <td>123</td> <td></td> 
+   </tr>
+   <tr>
+      <td>1023</td> <td></td> 
+   </tr>
+</table>
+</table>
+
+
+
+</div>
+
+</body>
+</html>
