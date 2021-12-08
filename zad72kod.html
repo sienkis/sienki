@@ -1,0 +1,68 @@
+<html>
+<body>
+<textarea rows="30" cols="150">
+
+
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="font-size:40px;">
+<script language="JavaScript">
+var l1=prompt("Podaj liczbe 1 w przedziale od 20 do 60 =","");
+var l2=prompt("Podaj liczbe 2 w przedziale od 20 do 60 =","");
+var pocz=prompt("Podaj wartosc poczatkowa wielkosci tekstu =","");
+var tekst=prompt("Podaj tekst: ","");
+l1=parseFloat(l1);
+l2=parseFloat(l2);
+pocz=parseFloat(pocz);
+tekst=tekst.toString();
+if(l1<20 || l1>60 || l2<20 || l2>60){
+document.write("Źle wprowadziłeś dane ");
+}
+else{
+
+
+if(l1<l2){
+for(i=0;i<21;i++){
+if(pocz>0 && pocz<100){
+document.write("<p style=\"font-size:"+pocz+"px; color: black;\"><br>"+tekst+"<br></p>");
+pocz+=5;
+}
+}
+}
+if(l2<l1){
+for(i=0;i<21;i++){
+if(pocz>0 && pocz<100){
+document.write("<p style=\"font-size:"+pocz+"px; color: black;\"><br>"+tekst+"<br></p>");
+pocz-=5;
+}
+}
+}
+}
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</div>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+</textarea>
+</html>
+</body>

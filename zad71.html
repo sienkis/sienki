@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="font-size:40px;">
+<script language="JavaScript">
+var a=prompt("Podaj nazwisko=","");
+var b=prompt("Podaj imie=","");
+a=a.toString();
+b=b.toString();
+var a_ciag=a.length;
+var b_ciag=b.length;
+a=(a_ciag%4)+5;
+b=(b_ciag%6)+20;
+for(i=0;i<b;i++){
+    document.write("*");
+    if(i+1==b){
+        document.write("<br>");
+    }
+}
+for(i=2;i<a;i++){
+    document.write("*");
+	for(j=2;j<b;j++){
+	document.write("&ensp;");
+	}
+	document.write("*"+"<br>");
+}
+for(i=0;i<b;i++){
+    document.write("*");
+}
+function zamknij_okno()
+{
+window.close()
+}
+</script>
+</div>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="zamknij_okno()"/>
+</body>
+</html>
